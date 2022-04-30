@@ -1,0 +1,131 @@
+{
+  "contractName": "Ballot",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"The Contest contract does this and that...\"}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Contest.sol\":\"Ballot\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Contest.sol\":{\"keccak256\":\"0xddec221ab861a483b7c068e5d4ff4dd29062781cc4c044f19ebc0e1752fa95ae\",\"urls\":[\"bzz-raw://668d5b7c9dee403874786587536f180a479056eebb32d30d84569add613ef969\",\"dweb:/ipfs/QmZzEiSv8WNEvJh6xKQG4NSMpWnaSdLJL2yoriDmC13tod\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582068a9c6edb2a57498b6766127cc6a783c1a632fb3ccfb83a05973464be6f5798864736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582068a9c6edb2a57498b6766127cc6a783c1a632fb3ccfb83a05973464be6f5798864736f6c63430005100032",
+  "sourceMap": "149:20:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;149:20:0;;;;;;;",
+  "deployedSourceMap": "149:20:0:-;;;;;",
+  "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.4.22 <0.9.0;\n\n// creating the contract\n/**\n * The Contest contract does this and that...\n */\ncontract Ballot {\n\n}\n",
+  "sourcePath": "/home/FINTECHINNOVATION.LAN/vstepanov/sublime/solidity_course/contracts/Contest.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Contest.sol",
+    "exportedSymbols": {
+      "Ballot": [
+        2
+      ]
+    },
+    "id": 3,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "36:32:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "The Contest contract does this and that...",
+        "fullyImplemented": true,
+        "id": 2,
+        "linearizedBaseContracts": [
+          2
+        ],
+        "name": "Ballot",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 3,
+        "src": "149:20:0"
+      }
+    ],
+    "src": "36:134:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Contest.sol",
+      "exportedSymbols": {
+        "Ballot": [
+          2
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "36:32:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "The Contest contract does this and that...",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            2
+          ],
+          "name": "Ballot",
+          "nodes": [
+            null
+          ],
+          "scope": 3
+        },
+        "id": 2,
+        "name": "ContractDefinition",
+        "src": "149:20:0"
+      }
+    ],
+    "id": 3,
+    "name": "SourceUnit",
+    "src": "36:134:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x4b5185CaC4E14ca36A02C200C6a95b4BED9d83fe",
+      "transactionHash": "0xb3b062187a7fd56efbc3925477a84ae03befee26590a94b371002cb79d5d4521"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-04-30T12:12:24.178Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {},
+    "notice": "The Contest contract does this and that..."
+  }
+}
