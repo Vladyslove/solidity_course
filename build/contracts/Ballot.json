@@ -1,15 +1,15 @@
 {
   "contractName": "Ballot",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"The Contest contract does this and that...\"}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Contest.sol\":\"Ballot\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Contest.sol\":{\"keccak256\":\"0xddec221ab861a483b7c068e5d4ff4dd29062781cc4c044f19ebc0e1752fa95ae\",\"urls\":[\"bzz-raw://668d5b7c9dee403874786587536f180a479056eebb32d30d84569add613ef969\",\"dweb:/ipfs/QmZzEiSv8WNEvJh6xKQG4NSMpWnaSdLJL2yoriDmC13tod\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582068a9c6edb2a57498b6766127cc6a783c1a632fb3ccfb83a05973464be6f5798864736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582068a9c6edb2a57498b6766127cc6a783c1a632fb3ccfb83a05973464be6f5798864736f6c63430005100032",
-  "sourceMap": "149:20:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;149:20:0;;;;;;;",
-  "deployedSourceMap": "149:20:0:-;;;;;",
-  "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.4.22 <0.9.0;\n\n// creating the contract\n/**\n * The Contest contract does this and that...\n */\ncontract Ballot {\n\n}\n",
-  "sourcePath": "/home/FINTECHINNOVATION.LAN/vstepanov/sublime/solidity_course/contracts/Contest.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"The Ballot contract does this and that...\"}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Ballot.sol\":\"Ballot\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Ballot.sol\":{\"keccak256\":\"0x48253a013b649eb6327188e4ae5866fc869356cb7eb224f40d0a6396cf1af87f\",\"urls\":[\"bzz-raw://e36d45c90fe6ab518df82f407f8098de3805f3c879004ba6a95874be1c01293f\",\"dweb:/ipfs/QmcVu2wi8xntzc9CCYivcRwRH6WX17K194fzkeAYAQisGA\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582031d882b79e365a853ea618476053476e8d6554bcdbd7d4e215427a1b818b2ba764736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582031d882b79e365a853ea618476053476e8d6554bcdbd7d4e215427a1b818b2ba764736f6c63430005100032",
+  "sourceMap": "148:20:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;148:20:0;;;;;;;",
+  "deployedSourceMap": "148:20:0:-;;;;;",
+  "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.4.22 <0.9.0;\n\n// creating the contract\n/**\n * The Ballot contract does this and that...\n */\ncontract Ballot {\n\n}\n",
+  "sourcePath": "/home/FINTECHINNOVATION.LAN/vstepanov/sublime/solidity_course/contracts/Ballot.sol",
   "ast": {
-    "absolutePath": "project:/contracts/Contest.sol",
+    "absolutePath": "project:/contracts/Ballot.sol",
     "exportedSymbols": {
       "Ballot": [
         2
@@ -36,7 +36,7 @@
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": "The Contest contract does this and that...",
+        "documentation": "The Ballot contract does this and that...",
         "fullyImplemented": true,
         "id": 2,
         "linearizedBaseContracts": [
@@ -46,14 +46,14 @@
         "nodeType": "ContractDefinition",
         "nodes": [],
         "scope": 3,
-        "src": "149:20:0"
+        "src": "148:20:0"
       }
     ],
-    "src": "36:134:0"
+    "src": "36:133:0"
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "project:/contracts/Contest.sol",
+      "absolutePath": "project:/contracts/Ballot.sol",
       "exportedSymbols": {
         "Ballot": [
           2
@@ -86,7 +86,7 @@
             null
           ],
           "contractKind": "contract",
-          "documentation": "The Contest contract does this and that...",
+          "documentation": "The Ballot contract does this and that...",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             2
@@ -99,12 +99,12 @@
         },
         "id": 2,
         "name": "ContractDefinition",
-        "src": "149:20:0"
+        "src": "148:20:0"
       }
     ],
     "id": 3,
     "name": "SourceUnit",
-    "src": "36:134:0"
+    "src": "36:133:0"
   },
   "compiler": {
     "name": "solc",
@@ -114,18 +114,18 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x4b5185CaC4E14ca36A02C200C6a95b4BED9d83fe",
-      "transactionHash": "0xb3b062187a7fd56efbc3925477a84ae03befee26590a94b371002cb79d5d4521"
+      "address": "0xe10Dc12aCA2470245a8F0A38a1ba49388A436993",
+      "transactionHash": "0xeb0d3007109e6db9dcdbdb490a021075922e634b63ac64d588b3896186baf894"
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-04-30T12:12:24.178Z",
+  "updatedAt": "2022-04-30T12:21:01.564Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
   "userdoc": {
     "methods": {},
-    "notice": "The Contest contract does this and that..."
+    "notice": "The Ballot contract does this and that..."
   }
 }

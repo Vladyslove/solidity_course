@@ -3,7 +3,7 @@ pragma solidity >=0.4.22 <0.9.0;
 
 // creating the contract
 /**
- * The Contest contract does this and that...
+ * The Ballot contract does this and that...
  */
 contract Ballot {
 
