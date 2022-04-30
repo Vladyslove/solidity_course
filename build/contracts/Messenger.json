@@ -1,17 +1,17 @@
 {
-  "contractName": "Ballot",
+  "contractName": "Messenger",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"The Ballot contract does this and that...\"}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Ballot.sol\":\"Ballot\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Ballot.sol\":{\"keccak256\":\"0x48253a013b649eb6327188e4ae5866fc869356cb7eb224f40d0a6396cf1af87f\",\"urls\":[\"bzz-raw://e36d45c90fe6ab518df82f407f8098de3805f3c879004ba6a95874be1c01293f\",\"dweb:/ipfs/QmcVu2wi8xntzc9CCYivcRwRH6WX17K194fzkeAYAQisGA\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"The Messenger contract does this and that...\"}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Messenger.sol\":\"Messenger\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Messenger.sol\":{\"keccak256\":\"0x48253a013b649eb6327188e4ae5866fc869356cb7eb224f40d0a6396cf1af87f\",\"urls\":[\"bzz-raw://e36d45c90fe6ab518df82f407f8098de3805f3c879004ba6a95874be1c01293f\",\"dweb:/ipfs/QmcVu2wi8xntzc9CCYivcRwRH6WX17K194fzkeAYAQisGA\"]}},\"version\":1}",
   "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a7231582031d882b79e365a853ea618476053476e8d6554bcdbd7d4e215427a1b818b2ba764736f6c63430005100032",
   "deployedBytecode": "0x6080604052600080fdfea265627a7a7231582031d882b79e365a853ea618476053476e8d6554bcdbd7d4e215427a1b818b2ba764736f6c63430005100032",
   "sourceMap": "148:20:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;148:20:0;;;;;;;",
   "deployedSourceMap": "148:20:0:-;;;;;",
-  "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.4.22 <0.9.0;\n\n// creating the contract\n/**\n * The Ballot contract does this and that...\n */\ncontract Ballot {\n\n}\n",
-  "sourcePath": "/home/FINTECHINNOVATION.LAN/vstepanov/sublime/solidity_course/contracts/Ballot.sol",
+  "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.4.22 <0.9.0;\n\n// creating the contract\n/**\n * The Messenger contract does this and that...\n */\ncontract Messenger {\n\n}\n",
+  "sourcePath": "/home/FINTECHINNOVATION.LAN/vstepanov/sublime/solidity_course/contracts/Messenger.sol",
   "ast": {
-    "absolutePath": "project:/contracts/Ballot.sol",
+    "absolutePath": "project:/contracts/Messenger.sol",
     "exportedSymbols": {
-      "Ballot": [
+      "Messenger": [
         2
       ]
     },
@@ -36,13 +36,13 @@
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
-        "documentation": "The Ballot contract does this and that...",
+        "documentation": "The Messenger contract does this and that...",
         "fullyImplemented": true,
         "id": 2,
         "linearizedBaseContracts": [
           2
         ],
-        "name": "Ballot",
+        "name": "Messenger",
         "nodeType": "ContractDefinition",
         "nodes": [],
         "scope": 3,
@@ -53,9 +53,9 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "project:/contracts/Ballot.sol",
+      "absolutePath": "project:/contracts/Messenger.sol",
       "exportedSymbols": {
-        "Ballot": [
+        "Messenger": [
           2
         ]
       }
@@ -86,12 +86,12 @@
             null
           ],
           "contractKind": "contract",
-          "documentation": "The Ballot contract does this and that...",
+          "documentation": "The Messenger contract does this and that...",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
             2
           ],
-          "name": "Ballot",
+          "name": "Messenger",
           "nodes": [
             null
           ],
@@ -126,6 +126,6 @@
   },
   "userdoc": {
     "methods": {},
-    "notice": "The Ballot contract does this and that..."
+    "notice": "The Messenger contract does this and that..."
   }
 }

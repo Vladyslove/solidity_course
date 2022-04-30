@@ -1,9 +1,9 @@
-var Ballot = artifacts.require("./Ballot.sol");
+var Messenger = artifacts.require("./Messenger.sol");
 
-contract("Ballot", function(accounts) {
+contract("Messenger", function(accounts) {
 
     it ("initializes with tow contestants", function() {
-        return Ballot.deployed().then(function(instance){
+        return Messenger.deployed().then(function(instance){
             return instance.contestantsCount();
         }).then(function(count) {
             assert.equal(count, 2);
@@ -13,7 +13,7 @@ contract("Ballot", function(accounts) {
 
 
     it("it initializes the contestants with the correct values", function() {
-        return Ballot.deployed().then(function(instance) {
+        return Messenger.deployed().then(function(instance) {
             contestInstance = instance
             return contestInstance.contestants(1)
         }).then(function(contestant) {
@@ -31,7 +31,7 @@ contract("Ballot", function(accounts) {
 
 
     it("allows a voter to cast a vote", function() {
-        return Ballot.deployed().then(function(instance) {
+        return Messenger.deployed().then(function(instance) {
             contestInstance = instance;
             contestantId = 2;
             return contestInstance.vote(contestantId, { from: accounts[0]});

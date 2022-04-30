@@ -27,11 +27,11 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON("Ballot.json", function(contest) {
+    $.getJSON("Messenger.json", function(contest) {
       // Instantiate a new truffle contract from the artifact
-      App.contracts.Ballot = TruffleContract(contest);
+      App.contracts.Messenger = TruffleContract(contest);
       // Connect provider to interact with contract
-      App.contracts.Ballot.setProvider(App.web3Provider);
+      App.contracts.Messenger.setProvider(App.web3Provider);
 
       App.listenForEvents();
       return App.render();
@@ -40,7 +40,7 @@ App = {
 
   // Listen for events emitted from the contract
   listenForEvents: function() {
-    App.contracts.Ballot.deployed().then(function(instance) {
+    App.contracts.Messenger.deployed().then(function(instance) {
       instance.votedEvent({}, {
         fromBlock: 0,
         toBlock: 'latest'
@@ -69,7 +69,7 @@ App = {
     });
 
     // Load contract data
-    App.contracts.Ballot.deployed().then(function(instance){
+    App.contracts.Messenger.deployed().then(function(instance){
       contestInstance = instance;
       return contestInstance.contestantsCount();
     }).then(function(contestantsCount){
@@ -104,7 +104,7 @@ App = {
 
     castVote: function() {
     var contestantId = $('#contestantsSelect').val();
-    App.contracts.Ballot.deployed().then(function(instance) {
+    App.contracts.Messenger.deployed().then(function(instance) {
       return instance.vote(contestantId, { from: App.account });
     }).then(function(result) {
       // Wait for votes to update
