@@ -21,21 +21,21 @@ contract SimpleToken {
         accounts[owner] = initialSupply;
     }
 
-    function transfer(address to, uint256 value) public {
+    function transfer(address receiver, uint256 value) public {
         //        if (accounts[msg.sender] >= value) {
         //            revert NotEnoughMoney();
         //        }
         uint index = 1;
         require(accounts[msg.sender] >= value);
-        require(accounts[to] + value >= accounts[to]);
+        require(accounts[receiver] + value >= accounts[receiver]);
         accounts[msg.sender] -= value;
-        accounts[to] += value;
+        accounts[receiver] += value;
 
-        lastInteractedAccountsPair = [msg.sender, to];
+        lastInteractedAccountsPair = [msg.sender, receiver];
 
         // throws invalid opcode
         //        balancesList[0] = accounts[msg.sender];
-        //        balancesList[index] = accounts[to];
+        //        balancesList[index] = accounts[receiver];
     }
 
     /**
@@ -70,10 +70,10 @@ contract SimpleToken {
 
     //this way the function  would not receive a second parameter
     //    value but it would use the msg.value that we send with it.
-    function transferWithoutValue(address to) payable public {
+    function transferWithoutValue(address receiver) payable public {
         require(accounts[msg.sender] >= msg.value);
-        require(accounts[to] + msg.value >= accounts[to]);
+        require(accounts[receiver] + msg.value >= accounts[receiver]);
         accounts[msg.sender] -= msg.value;
-        accounts[to] += msg.value;
+        accounts[receiver] += msg.value;
     }
 }
