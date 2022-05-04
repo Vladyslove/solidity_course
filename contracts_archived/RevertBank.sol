@@ -9,10 +9,10 @@ contract RevertBank {
     mapping(address => uint) public accounts;
 
     function deposit(uint money) public payable {
-        if(accounts[msg.sender] + msg.value >= accounts[msg.sender]) {
+        if(accounts[msg.sender] + money >= accounts[msg.sender]) {
             revert("Overflow error");
         }
-        accounts[msg.sender] += msg.value;
+        accounts[msg.sender] += money;
     }
 
     function withdraw(uint money) public {
