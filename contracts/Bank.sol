@@ -2,7 +2,7 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 // after lecture 18.Mappings in solidity
-contract Bank {
+contract BankMappings {
     mapping(address => uint) public accounts;
 
     function deposit(uint money) public {
