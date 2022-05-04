@@ -17,7 +17,7 @@ contract ModifierOwned {
     }
 }
 
-contract Mortal is ModifierOwned {
+contract ModifierMortal is ModifierOwned {
 
     function close() public onlyOwner {
         selfdestruct(owner);
