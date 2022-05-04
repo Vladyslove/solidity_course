@@ -14,7 +14,7 @@ Create one more Account
 
 Create a function transfer that deducts money from first account and adds them to the second
 */
-contract BankStruct {
+contract StructBank {
     struct Account {
         address addr;
         uint amount;
