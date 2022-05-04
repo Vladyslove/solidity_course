@@ -27,25 +27,32 @@ contract StructBank {
 
     mapping(address => uint) balances;
 
+    address public owner;
+
     Account[] public accounts;
+
+    modifier onlyOwner {
+        require (msg.sender == owner, "You can only manage money in accounts you own.");
+        _;
+    }
 
     function addAccount(address _addr, uint _amount) public {
         accounts.push(Account(_addr, _amount));
     }
 
-    function addAmount(uint _addMoney) public {
+    function addAmount(uint _addMoney) public payable{
         acc.amount += _addMoney;
     }
 
-    function deposit(uint money) public {
+    function deposit(uint money) public payable {
         balances[msg.sender] += money;
     }
 
-    function withdrawAmount(uint _withdrawMoney) public {
+    function withdrawAmount(uint _withdrawMoney) public payable onlyOwner {
         acc.amount -= _withdrawMoney;
     }
 
-    function withdraw(uint money) public {
+    function withdraw(uint money) public payable onlyOwner{
         balances[msg.sender] -= money;
     }
 
@@ -54,12 +61,12 @@ contract StructBank {
         amount : 222
     });
 
-    function transferAmount(uint _addMoney) public {
+    function transferAmount(uint _addMoney) public payable onlyOwner{
         acc.amount -= _addMoney;
         acc2.amount += _addMoney;
     }
 
-    function transfer(address _to, address _from, uint money) public {
+    function transfer(address _to, address _from, uint money) public payable onlyOwner{
         balances[_from] -= money;
         balances[_to] += money;
     }
