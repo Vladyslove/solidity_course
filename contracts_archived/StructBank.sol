@@ -25,12 +25,28 @@ contract StructBank {
         amount : 111
     });
 
+    mapping(address => uint) balances;
+
+    Account[] public accounts;
+
+    function addAccount(address _addr, uint _amount) public {
+        accounts.push(Account(_addr, _amount));
+    }
+
     function addAmount(uint _addMoney) public {
         acc.amount += _addMoney;
     }
 
+    function deposit(uint money) public {
+        balances[msg.sender] += money;
+    }
+
     function withdrawAmount(uint _withdrawMoney) public {
         acc.amount -= _withdrawMoney;
+    }
+
+    function withdraw(uint money) public {
+        balances[msg.sender] -= money;
     }
 
     Account public acc2 = Account({
@@ -41,5 +57,10 @@ contract StructBank {
     function transferAmount(uint _addMoney) public {
         acc.amount -= _addMoney;
         acc2.amount += _addMoney;
+    }
+
+    function transfer(address _to, address _from, uint money) public {
+        balances[_from] -= money;
+        balances[_to] += money;
     }
 }
