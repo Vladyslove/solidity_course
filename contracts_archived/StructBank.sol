@@ -16,8 +16,9 @@ Create a function transfer that deducts money from first account and adds them t
 */
 
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract StructBank is Ownable {
+contract StructBank is Ownable, ERC20 {
     struct Account {
         address addr;
         uint amount;
