@@ -1,0 +1,1684 @@
+{
+  "contractName": "BankStruct",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "acc",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "acc2",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "addr",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_addMoney",
+          "type": "uint256"
+        }
+      ],
+      "name": "addAmount",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_withdrawMoney",
+          "type": "uint256"
+        }
+      ],
+      "name": "withdrawAmount",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_addMoney",
+          "type": "uint256"
+        }
+      ],
+      "name": "transferAmount",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"acc\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"acc2\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_addMoney\",\"type\":\"uint256\"}],\"name\":\"addAmount\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_addMoney\",\"type\":\"uint256\"}],\"name\":\"transferAmount\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_withdrawMoney\",\"type\":\"uint256\"}],\"name\":\"withdrawAmount\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{},\"notice\":\"ASSIGNMENT: Copy the contract and test it out in REMIX Add amount to the account with the function \\u201caddAmount\\u201d Create a function \\u201cwithdraw\\u201d that deducts money from the account Create one more Account Create a function transfer that deducts money from first account and adds them to the second\"}},\"settings\":{\"compilationTarget\":{\"project:/contracts/StructBank.sol\":\"BankStruct\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/StructBank.sol\":{\"keccak256\":\"0x4db193cb52731082f3d2f553dfc79e8a5bbec2ed95c7c1106626c040e45005a2\",\"urls\":[\"bzz-raw://7420a35ec45a2c42204094fdf27dd0e055138421e8cae18014aac89474d3c65a\",\"dweb:/ipfs/QmWQ19tWg7vEFWnMnhdKPHPcwyLGLtKvwAwAubvZvBfVSA\"]}},\"version\":1}",
+  "bytecode": "0x608060405260405180604001604052807366ec542d55a86f2fd0b0d9cb9f31bc20ac02477a73ffffffffffffffffffffffffffffffffffffffff168152602001606f8152506000808201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506020820151816001015550506040518060400160405280734b20993bc481177ec7e8f571cecae8a9e22c02db73ffffffffffffffffffffffffffffffffffffffff16815260200160de815250600260008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010155505034801561013957600080fd5b50610276806101496000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c80630562b9f71461005c5780630912f2321461008a57806355574c9b146100b85780637da1365e146100e6578063ccd9180914610137575b600080fd5b6100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610188565b005b6100b6600480360360208110156100a057600080fd5b810190808035906020019092919050505061019e565b005b6100e4600480360360208110156100ce57600080fd5b81019080803590602001909291905050506101b4565b005b6100ee6101dd565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b61013f61020f565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b8060006001016000828254039250508190555050565b8060006001016000828254019250508190555050565b806000600101600082825403925050819055508060026001016000828254019250508190555050565b60008060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b60028060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001015490508256fea265627a7a72315820e0ad6d5a5ec55ec66d1a8e4014924c8574751fae89326a47eb14e68bd52baf6964736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c80630562b9f71461005c5780630912f2321461008a57806355574c9b146100b85780637da1365e146100e6578063ccd9180914610137575b600080fd5b6100886004803603602081101561007257600080fd5b8101908080359060200190929190505050610188565b005b6100b6600480360360208110156100a057600080fd5b810190808035906020019092919050505061019e565b005b6100e4600480360360208110156100ce57600080fd5b81019080803590602001909291905050506101b4565b005b6100ee6101dd565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b61013f61020f565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b8060006001016000828254039250508190555050565b8060006001016000828254019250508190555050565b806000600101600082825403925050819055508060026001016000828254019250508190555050565b60008060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b60028060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001015490508256fea265627a7a72315820e0ad6d5a5ec55ec66d1a8e4014924c8574751fae89326a47eb14e68bd52baf6964736f6c63430005100032",
+  "sourceMap": "385:660:5:-;;;503:96;;;;;;;;528:42;503:96;;;;;;589:3;503:96;;;482:117;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;819:96;;;;;;;;844:42;819:96;;;;;;905:3;819:96;;;797:118;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;385:660;8:9:-1;5:2;;;30:1;27;20:12;5:2;385:660:5;;;;;;;",
+  "deployedSourceMap": "385:660:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;385:660:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;694:97;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;694:97:5;;;;;;;;;;;;;;;;;:::i;:::-;;606:82;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;606:82:5;;;;;;;;;;;;;;;;;:::i;:::-;;922:121;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;922:121:5;;;;;;;;;;;;;;;;;:::i;:::-;;482:117;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;797:118;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;694:97;770:14;756:3;:10;;;:28;;;;;;;;;;;694:97;:::o;606:82::-;672:9;658:3;:10;;;:23;;;;;;;;;;;606:82;:::o;922:121::-;993:9;979:3;:10;;;:23;;;;;;;;;;;1027:9;1012:4;:11;;;:24;;;;;;;;;;;922:121;:::o;482:117::-;;;;;;;;;;;;;;;;;;;;;;;:::o;797:118::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.4.22 <0.9.0;\n\n/**\n* ASSIGNMENT:\n\nCopy the contract and test it out in REMIX\n\nAdd amount to the account with the function “addAmount”\n\nCreate a function “withdraw” that deducts money from the account\n\nCreate one more Account\n\nCreate a function transfer that deducts money from first account and adds them to the second\n*/\ncontract BankStruct {\n    struct Account {\n        address addr;\n        uint amount;\n    }\n\n    Account public acc = Account({\n        addr : 0x66ec542D55a86F2Fd0B0d9cB9f31bc20aC02477a,\n        amount : 111\n    });\n\n    function addAmount(uint _addMoney) public {\n        acc.amount += _addMoney;\n    }\n\n    function withdrawAmount(uint _withdrawMoney) public {\n        acc.amount -= _withdrawMoney;\n    }\n\n    Account public acc2 = Account({\n        addr : 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db,\n        amount : 222\n    });\n\n    function transferAmount(uint _addMoney) public {\n        acc.amount -= _addMoney;\n        acc2.amount += _addMoney;\n    }\n}\n",
+  "sourcePath": "/home/FINTECHINNOVATION.LAN/vstepanov/sublime/solidity_course/contracts/StructBank.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/StructBank.sol",
+    "exportedSymbols": {
+      "BankStruct": [
+        257
+      ]
+    },
+    "id": 258,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 197,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.9",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "36:32:5"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": "ASSIGNMENT:\nCopy the contract and test it out in REMIX\nAdd amount to the account with the function “addAmount”\nCreate a function “withdraw” that deducts money from the account\nCreate one more Account\nCreate a function transfer that deducts money from first account and adds them to the second",
+        "fullyImplemented": true,
+        "id": 257,
+        "linearizedBaseContracts": [
+          257
+        ],
+        "name": "BankStruct",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "BankStruct.Account",
+            "id": 202,
+            "members": [
+              {
+                "constant": false,
+                "id": 199,
+                "name": "addr",
+                "nodeType": "VariableDeclaration",
+                "scope": 202,
+                "src": "436:12:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 198,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "436:7:5",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 201,
+                "name": "amount",
+                "nodeType": "VariableDeclaration",
+                "scope": 202,
+                "src": "458:11:5",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 200,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "458:4:5",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Account",
+            "nodeType": "StructDefinition",
+            "scope": 257,
+            "src": "411:65:5",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 208,
+            "name": "acc",
+            "nodeType": "VariableDeclaration",
+            "scope": 257,
+            "src": "482:117:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Account_$202_storage",
+              "typeString": "struct BankStruct.Account"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 203,
+              "name": "Account",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 202,
+              "src": "482:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Account_$202_storage_ptr",
+                "typeString": "struct BankStruct.Account"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307836366563353432443535613836463246643042306439634239663331626332306143303234373761",
+                  "id": 205,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "528:42:5",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "value": "0x66ec542D55a86F2Fd0B0d9cB9f31bc20aC02477a"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "313131",
+                  "id": 206,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "589:3:5",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_111_by_1",
+                    "typeString": "int_const 111"
+                  },
+                  "value": "111"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  {
+                    "typeIdentifier": "t_rational_111_by_1",
+                    "typeString": "int_const 111"
+                  }
+                ],
+                "id": 204,
+                "name": "Account",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 202,
+                "src": "503:7:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_struct$_Account_$202_storage_ptr_$",
+                  "typeString": "type(struct BankStruct.Account storage pointer)"
+                }
+              },
+              "id": 207,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "structConstructorCall",
+              "lValueRequested": false,
+              "names": [
+                "addr",
+                "amount"
+              ],
+              "nodeType": "FunctionCall",
+              "src": "503:96:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Account_$202_memory",
+                "typeString": "struct BankStruct.Account memory"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 219,
+              "nodeType": "Block",
+              "src": "648:40:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 217,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 213,
+                        "name": "acc",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 208,
+                        "src": "658:3:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Account_$202_storage",
+                          "typeString": "struct BankStruct.Account storage ref"
+                        }
+                      },
+                      "id": 215,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "amount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 201,
+                      "src": "658:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 216,
+                      "name": "_addMoney",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 210,
+                      "src": "672:9:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "658:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 218,
+                  "nodeType": "ExpressionStatement",
+                  "src": "658:23:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 220,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "addAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 211,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 210,
+                  "name": "_addMoney",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 220,
+                  "src": "625:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 209,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "625:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "624:16:5"
+            },
+            "returnParameters": {
+              "id": 212,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "648:0:5"
+            },
+            "scope": 257,
+            "src": "606:82:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 231,
+              "nodeType": "Block",
+              "src": "746:45:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 229,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 225,
+                        "name": "acc",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 208,
+                        "src": "756:3:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Account_$202_storage",
+                          "typeString": "struct BankStruct.Account storage ref"
+                        }
+                      },
+                      "id": 227,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "amount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 201,
+                      "src": "756:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "-=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 228,
+                      "name": "_withdrawMoney",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 222,
+                      "src": "770:14:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "756:28:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 230,
+                  "nodeType": "ExpressionStatement",
+                  "src": "756:28:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 232,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "withdrawAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 223,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 222,
+                  "name": "_withdrawMoney",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 232,
+                  "src": "718:19:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 221,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "718:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "717:21:5"
+            },
+            "returnParameters": {
+              "id": 224,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "746:0:5"
+            },
+            "scope": 257,
+            "src": "694:97:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 238,
+            "name": "acc2",
+            "nodeType": "VariableDeclaration",
+            "scope": 257,
+            "src": "797:118:5",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Account_$202_storage",
+              "typeString": "struct BankStruct.Account"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 233,
+              "name": "Account",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 202,
+              "src": "797:7:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Account_$202_storage_ptr",
+                "typeString": "struct BankStruct.Account"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "307834423230393933426334383131373765633745386635373163654361453841396532324330326462",
+                  "id": 235,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "844:42:5",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  "value": "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db"
+                },
+                {
+                  "argumentTypes": null,
+                  "hexValue": "323232",
+                  "id": 236,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "number",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "905:3:5",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_rational_222_by_1",
+                    "typeString": "int_const 222"
+                  },
+                  "value": "222"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_address_payable",
+                    "typeString": "address payable"
+                  },
+                  {
+                    "typeIdentifier": "t_rational_222_by_1",
+                    "typeString": "int_const 222"
+                  }
+                ],
+                "id": 234,
+                "name": "Account",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 202,
+                "src": "819:7:5",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_type$_t_struct$_Account_$202_storage_ptr_$",
+                  "typeString": "type(struct BankStruct.Account storage pointer)"
+                }
+              },
+              "id": 237,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "structConstructorCall",
+              "lValueRequested": false,
+              "names": [
+                "addr",
+                "amount"
+              ],
+              "nodeType": "FunctionCall",
+              "src": "819:96:5",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Account_$202_memory",
+                "typeString": "struct BankStruct.Account memory"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 255,
+              "nodeType": "Block",
+              "src": "969:74:5",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 247,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 243,
+                        "name": "acc",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 208,
+                        "src": "979:3:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Account_$202_storage",
+                          "typeString": "struct BankStruct.Account storage ref"
+                        }
+                      },
+                      "id": 245,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "amount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 201,
+                      "src": "979:10:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "-=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 246,
+                      "name": "_addMoney",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 240,
+                      "src": "993:9:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "979:23:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 248,
+                  "nodeType": "ExpressionStatement",
+                  "src": "979:23:5"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 253,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 249,
+                        "name": "acc2",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 238,
+                        "src": "1012:4:5",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Account_$202_storage",
+                          "typeString": "struct BankStruct.Account storage ref"
+                        }
+                      },
+                      "id": 251,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "amount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 201,
+                      "src": "1012:11:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "+=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 252,
+                      "name": "_addMoney",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 240,
+                      "src": "1027:9:5",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1012:24:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 254,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1012:24:5"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 256,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "transferAmount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 241,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 240,
+                  "name": "_addMoney",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 256,
+                  "src": "946:14:5",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 239,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "946:4:5",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "945:16:5"
+            },
+            "returnParameters": {
+              "id": 242,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "969:0:5"
+            },
+            "scope": 257,
+            "src": "922:121:5",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 258,
+        "src": "385:660:5"
+      }
+    ],
+    "src": "36:1010:5"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/StructBank.sol",
+      "exportedSymbols": {
+        "BankStruct": [
+          257
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".22",
+            "<",
+            "0.9",
+            ".0"
+          ]
+        },
+        "id": 197,
+        "name": "PragmaDirective",
+        "src": "36:32:5"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": "ASSIGNMENT:\nCopy the contract and test it out in REMIX\nAdd amount to the account with the function “addAmount”\nCreate a function “withdraw” that deducts money from the account\nCreate one more Account\nCreate a function transfer that deducts money from first account and adds them to the second",
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            257
+          ],
+          "name": "BankStruct",
+          "scope": 258
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "BankStruct.Account",
+              "name": "Account",
+              "scope": 257,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "addr",
+                  "scope": 202,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 198,
+                    "name": "ElementaryTypeName",
+                    "src": "436:7:5"
+                  }
+                ],
+                "id": 199,
+                "name": "VariableDeclaration",
+                "src": "436:12:5"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "amount",
+                  "scope": 202,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 200,
+                    "name": "ElementaryTypeName",
+                    "src": "458:4:5"
+                  }
+                ],
+                "id": 201,
+                "name": "VariableDeclaration",
+                "src": "458:11:5"
+              }
+            ],
+            "id": 202,
+            "name": "StructDefinition",
+            "src": "411:65:5"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "acc",
+              "scope": 257,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct BankStruct.Account",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Account",
+                  "referencedDeclaration": 202,
+                  "type": "struct BankStruct.Account"
+                },
+                "id": 203,
+                "name": "UserDefinedTypeName",
+                "src": "482:7:5"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "isStructConstructorCall": true,
+                  "lValueRequested": false,
+                  "names": [
+                    "addr",
+                    "amount"
+                  ],
+                  "type": "struct BankStruct.Account memory",
+                  "type_conversion": false
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_111_by_1",
+                          "typeString": "int_const 111"
+                        }
+                      ],
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 202,
+                      "type": "type(struct BankStruct.Account storage pointer)",
+                      "value": "Account"
+                    },
+                    "id": 204,
+                    "name": "Identifier",
+                    "src": "503:7:5"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "307836366563353432443535613836463246643042306439634239663331626332306143303234373761",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "number",
+                      "type": "address payable",
+                      "value": "0x66ec542D55a86F2Fd0B0d9cB9f31bc20aC02477a"
+                    },
+                    "id": 205,
+                    "name": "Literal",
+                    "src": "528:42:5"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "313131",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "number",
+                      "type": "int_const 111",
+                      "value": "111"
+                    },
+                    "id": 206,
+                    "name": "Literal",
+                    "src": "589:3:5"
+                  }
+                ],
+                "id": 207,
+                "name": "FunctionCall",
+                "src": "503:96:5"
+              }
+            ],
+            "id": 208,
+            "name": "VariableDeclaration",
+            "src": "482:117:5"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "addAmount",
+              "scope": 257,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_addMoney",
+                      "scope": 220,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 209,
+                        "name": "ElementaryTypeName",
+                        "src": "625:4:5"
+                      }
+                    ],
+                    "id": 210,
+                    "name": "VariableDeclaration",
+                    "src": "625:14:5"
+                  }
+                ],
+                "id": 211,
+                "name": "ParameterList",
+                "src": "624:16:5"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 212,
+                "name": "ParameterList",
+                "src": "648:0:5"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "+=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "amount",
+                              "referencedDeclaration": 201,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 208,
+                                  "type": "struct BankStruct.Account storage ref",
+                                  "value": "acc"
+                                },
+                                "id": 213,
+                                "name": "Identifier",
+                                "src": "658:3:5"
+                              }
+                            ],
+                            "id": 215,
+                            "name": "MemberAccess",
+                            "src": "658:10:5"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 210,
+                              "type": "uint256",
+                              "value": "_addMoney"
+                            },
+                            "id": 216,
+                            "name": "Identifier",
+                            "src": "672:9:5"
+                          }
+                        ],
+                        "id": 217,
+                        "name": "Assignment",
+                        "src": "658:23:5"
+                      }
+                    ],
+                    "id": 218,
+                    "name": "ExpressionStatement",
+                    "src": "658:23:5"
+                  }
+                ],
+                "id": 219,
+                "name": "Block",
+                "src": "648:40:5"
+              }
+            ],
+            "id": 220,
+            "name": "FunctionDefinition",
+            "src": "606:82:5"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "withdrawAmount",
+              "scope": 257,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_withdrawMoney",
+                      "scope": 232,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 221,
+                        "name": "ElementaryTypeName",
+                        "src": "718:4:5"
+                      }
+                    ],
+                    "id": 222,
+                    "name": "VariableDeclaration",
+                    "src": "718:19:5"
+                  }
+                ],
+                "id": 223,
+                "name": "ParameterList",
+                "src": "717:21:5"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 224,
+                "name": "ParameterList",
+                "src": "746:0:5"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "-=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "amount",
+                              "referencedDeclaration": 201,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 208,
+                                  "type": "struct BankStruct.Account storage ref",
+                                  "value": "acc"
+                                },
+                                "id": 225,
+                                "name": "Identifier",
+                                "src": "756:3:5"
+                              }
+                            ],
+                            "id": 227,
+                            "name": "MemberAccess",
+                            "src": "756:10:5"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 222,
+                              "type": "uint256",
+                              "value": "_withdrawMoney"
+                            },
+                            "id": 228,
+                            "name": "Identifier",
+                            "src": "770:14:5"
+                          }
+                        ],
+                        "id": 229,
+                        "name": "Assignment",
+                        "src": "756:28:5"
+                      }
+                    ],
+                    "id": 230,
+                    "name": "ExpressionStatement",
+                    "src": "756:28:5"
+                  }
+                ],
+                "id": 231,
+                "name": "Block",
+                "src": "746:45:5"
+              }
+            ],
+            "id": 232,
+            "name": "FunctionDefinition",
+            "src": "694:97:5"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "acc2",
+              "scope": 257,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct BankStruct.Account",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "Account",
+                  "referencedDeclaration": 202,
+                  "type": "struct BankStruct.Account"
+                },
+                "id": 233,
+                "name": "UserDefinedTypeName",
+                "src": "797:7:5"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "isStructConstructorCall": true,
+                  "lValueRequested": false,
+                  "names": [
+                    "addr",
+                    "amount"
+                  ],
+                  "type": "struct BankStruct.Account memory",
+                  "type_conversion": false
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_rational_222_by_1",
+                          "typeString": "int_const 222"
+                        }
+                      ],
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": 202,
+                      "type": "type(struct BankStruct.Account storage pointer)",
+                      "value": "Account"
+                    },
+                    "id": 234,
+                    "name": "Identifier",
+                    "src": "819:7:5"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "307834423230393933426334383131373765633745386635373163654361453841396532324330326462",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "number",
+                      "type": "address payable",
+                      "value": "0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db"
+                    },
+                    "id": 235,
+                    "name": "Literal",
+                    "src": "844:42:5"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "323232",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "number",
+                      "type": "int_const 222",
+                      "value": "222"
+                    },
+                    "id": 236,
+                    "name": "Literal",
+                    "src": "905:3:5"
+                  }
+                ],
+                "id": 237,
+                "name": "FunctionCall",
+                "src": "819:96:5"
+              }
+            ],
+            "id": 238,
+            "name": "VariableDeclaration",
+            "src": "797:118:5"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "transferAmount",
+              "scope": 257,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_addMoney",
+                      "scope": 256,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 239,
+                        "name": "ElementaryTypeName",
+                        "src": "946:4:5"
+                      }
+                    ],
+                    "id": 240,
+                    "name": "VariableDeclaration",
+                    "src": "946:14:5"
+                  }
+                ],
+                "id": 241,
+                "name": "ParameterList",
+                "src": "945:16:5"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 242,
+                "name": "ParameterList",
+                "src": "969:0:5"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "-=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "amount",
+                              "referencedDeclaration": 201,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 208,
+                                  "type": "struct BankStruct.Account storage ref",
+                                  "value": "acc"
+                                },
+                                "id": 243,
+                                "name": "Identifier",
+                                "src": "979:3:5"
+                              }
+                            ],
+                            "id": 245,
+                            "name": "MemberAccess",
+                            "src": "979:10:5"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 240,
+                              "type": "uint256",
+                              "value": "_addMoney"
+                            },
+                            "id": 246,
+                            "name": "Identifier",
+                            "src": "993:9:5"
+                          }
+                        ],
+                        "id": 247,
+                        "name": "Assignment",
+                        "src": "979:23:5"
+                      }
+                    ],
+                    "id": 248,
+                    "name": "ExpressionStatement",
+                    "src": "979:23:5"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "+=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": true,
+                              "member_name": "amount",
+                              "referencedDeclaration": 201,
+                              "type": "uint256"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 238,
+                                  "type": "struct BankStruct.Account storage ref",
+                                  "value": "acc2"
+                                },
+                                "id": 249,
+                                "name": "Identifier",
+                                "src": "1012:4:5"
+                              }
+                            ],
+                            "id": 251,
+                            "name": "MemberAccess",
+                            "src": "1012:11:5"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 240,
+                              "type": "uint256",
+                              "value": "_addMoney"
+                            },
+                            "id": 252,
+                            "name": "Identifier",
+                            "src": "1027:9:5"
+                          }
+                        ],
+                        "id": 253,
+                        "name": "Assignment",
+                        "src": "1012:24:5"
+                      }
+                    ],
+                    "id": 254,
+                    "name": "ExpressionStatement",
+                    "src": "1012:24:5"
+                  }
+                ],
+                "id": 255,
+                "name": "Block",
+                "src": "969:74:5"
+              }
+            ],
+            "id": 256,
+            "name": "FunctionDefinition",
+            "src": "922:121:5"
+          }
+        ],
+        "id": 257,
+        "name": "ContractDefinition",
+        "src": "385:660:5"
+      }
+    ],
+    "id": 258,
+    "name": "SourceUnit",
+    "src": "36:1010:5"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xf5858Fc5eb862659C2B160AFD846Bb2C0e13673c",
+      "transactionHash": "0xc9129243d1721db616962cd1d0e3a12e9ba0d7c70b85e2cbc34cbd3e9565d70b"
+    }
+  },
+  "schemaVersion": "3.4.7",
+  "updatedAt": "2022-05-04T11:32:06.442Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {},
+    "notice": "ASSIGNMENT: Copy the contract and test it out in REMIX Add amount to the account with the function “addAmount” Create a function “withdraw” that deducts money from the account Create one more Account Create a function transfer that deducts money from first account and adds them to the second"
+  }
+}

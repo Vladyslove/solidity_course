@@ -14,7 +14,10 @@ Create one more Account
 
 Create a function transfer that deducts money from first account and adds them to the second
 */
-contract StructBank {
+
+import "@openzeppelin/contracts/access/Ownable.sol";
+
+contract StructBank is Ownable {
     struct Account {
         address addr;
         uint amount;
@@ -31,10 +34,10 @@ contract StructBank {
 
     Account[] public accounts;
 
-    modifier onlyOwner {
-        require (msg.sender == owner, "You can only manage money in accounts you own.");
-        _;
-    }
+//    modifier onlyOwner {
+//        require (msg.sender == owner, "You can only manage money in accounts you own.");
+//        _;
+//    }
 
     function addAccount(address _addr, uint _amount) public {
         accounts.push(Account(_addr, _amount));

@@ -4,6 +4,7 @@ pragma solidity >=0.4.22 <0.9.0;
 /**
 *
 */
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 import "https://github.com/Vladyslove/contest/blob/develop/contracts/SafeMath.sol";
 
