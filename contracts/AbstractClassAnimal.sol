@@ -5,12 +5,12 @@ pragma solidity >=0.4.22 <0.9.0;
 *
 */
 
-contract AbstractClassAnimal {
+abstract contract AbstractClassAnimal {
     string public breed;
     uint public age;
     uint public weight;
 
-    constructor() public {
+    constructor() {
         age = 1;
         weight = 1;
     }
@@ -19,7 +19,7 @@ contract AbstractClassAnimal {
 
     function eat() pure public returns (string memory) {return "Nom nom..";}
 
-    function talk() pure public returns (string memory);
+    function talk() pure public virtual returns (string memory);
 }
 
 contract Cat is AbstractClassAnimal {
@@ -28,7 +28,7 @@ contract Cat is AbstractClassAnimal {
         age = 3;
         weight = 5;
     }
-    function talk() pure public returns (string memory) {return "miaow";}
+    function talk() pure public override returns (string memory) {return "miaow";}
 }
 
 contract Dog is AbstractClassAnimal {
@@ -37,5 +37,5 @@ contract Dog is AbstractClassAnimal {
         age = 5;
         weight = 3;
     }
-    function talk() pure public returns (string memory) {return "bark bark";}
+    function talk() pure public override returns (string memory) {return "bark bark";}
 }
